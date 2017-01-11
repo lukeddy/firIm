@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Title</title>
+    <script>
+        var html = document.documentElement;
+        var liH = html.clientHeight;//可视高度
+        var width = html.clientWidth;//可视宽度
+        html.style.fontSize = width / 85.375 + 'px';//字体大小为16px
+
+        window.onresize = function () {
+            liH = html.clientHeight;//可视高度
+            width = html.clientWidth;//可视宽度
+            html.style.fontSize = width / 85.375 + 'px';
+//            console.log(liH);
+//            console.log(width);
+        };
+    </script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont/styles.css">
+</head>
+<body>
+<!--开场圆-->
+<div class="circle"></div>
+<!--标题和导航-->
+<div class="title">
+    <h1><a href="javascript:;">fir.im</a></h1>
+    <nav>
+        <strong>{</strong>
+        <a href="javascript:;">首页</a><i>,</i>
+        <a href="javascript:;">价格</a><i>,</i>
+        <a href="javascript:;">文档</a><i>,</i>
+        <a href="javascript:;">工具</a><i>,</i>
+        <a href="javascript:;">帮助中心</a><i>,</i>
+        <a href="javascript:;">登录</a><i>,</i>
+        <a href="javascript:;">注册</a>
+        <strong>}</strong>
+    </nav>
+</div>
+<!--动态文字-->
+<div class="bottomTxt">
+    <span class="inputTxt">BetaAppHost</span>
+    <span class="line">|</span>
+</div>
+<!--飞机-->
+<div class="plane">
+    <div class="planeBody"><img src="img/plane.svg" alt=""></div>
+    <div class="planeFan"><img src="img/propeller.svg" alt=""></div>
+</div>
+<!--三列表-->
+<div class="list">
+    <div class="list_i" id="li-1">
+        <div class="front"></div>
+        <div class="reverse">
+            <div class="scroll">
+                <div class="top">
+                    <div class="sWrap">
+                        <h2 class="icon1 icon">内测托管</h2>
+                        <p>一键上传应用，扫描二维码下载</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="sWrap">
+                        <h2 class="icon4 icon">权限控制</h2>
+                        <p>灵活的访问权限控制，可添加团队成员共同上传、管理应用</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_i" id="li-2">
+        <div class="front"></div>
+        <div class="reverse">
+            <div class="scroll middle">
+                <div class="bottom">
+                    <div class="sWrap">
+                        <h2 class="icon5 icon">开放 API</h2>
+                        <p>使用 fir.im 的 API 接口可以方便搭建Jenkins 等自动集成的系统</p>
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="sWrap">
+                        <h2 class="icon2 icon">应用合并</h2>
+                        <p>扫描同一个二维码，根据设备类型自动下载对应的 iOS或 Android 应用。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_i" id="li-3">
+        <div class="front"></div>
+        <div class="reverse">
+            <div class="scroll">
+                <div class="top">
+                    <div class="sWrap">
+                        <h2 class="icon3 icon">命令行工具</h2>
+                        <p>fir-cli 可以通过命令行查看、上传、编译、打包应用</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="sWrap">
+                        <h2 class="icon6 icon">Web Hooks</h2>
+                        <p>应用更新时团队成员会收到更新邮件，添加Web Hooks的第三方平台也会有更新消息提醒</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--四个盒子-->
+<div class="box">
+    <div class="box_i">
+        <div class="bWrap">
+            <p class="txt icon7 icon">让测试用户快速获取 UDID 并发送给开发者</p>
+            <div class="sWrap">
+                <div class="container">
+                    <div class="left"><span></span></div>
+                    <div class="front"></div>
+                    <div class="right"><span></span><em>GET<br>UDID4</em></div>
+                    <div class="back"></div>
+                    <div class="topL"></div>
+                    <div class="topR"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_i">
+        <div class="bWrap">
+            <p class="txt icon7 icon">读取手机日志，快速定位无法安装的原因</p>
+            <div class="sWrap">
+                <div class="container">
+                    <div class="left"><span></span></div>
+                    <div class="front"></div>
+                    <div class="right"><span></span><em>GET<br>UDID4</em></div>
+                    <div class="back"></div>
+                    <div class="topL"></div>
+                    <div class="topR"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_i">
+        <div class="bWrap">
+            <p class="txt icon7 icon">添加 SDK，灵活实现应用的检测更新功能</p>
+            <div class="sWrap">
+                <div class="container">
+                    <div class="left"><span></span></div>
+                    <div class="front"></div>
+                    <div class="right"><span></span><em>GET<br>UDID4</em></div>
+                    <div class="back"></div>
+                    <div class="topL"></div>
+                    <div class="topR"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_i">
+        <div class="bWrap">
+            <p class="txt icon7 icon">快速检测本机在 fir.im 的上传下载速度</p>
+            <div class="sWrap">
+                <div class="container">
+                    <div class="left"><span></span></div>
+                    <div class="front"></div>
+                    <div class="right"><span></span><em>GET<br>UDID4</em></div>
+                    <div class="back"></div>
+                    <div class="topL"></div>
+                    <div class="topR"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--用户页-->
+<div id="user">
+    <p class="txt">What Our Users Say</p>
+    <nav class="nav">
+        <span class="active">聚美</span>
+        <span>节操</span>
+        <span>京东</span>
+        <span>保养</span>
+        <span>厨</span>
+    </nav>
+    <div class="divs">
+        <p class="show">就像送自己的孩子去托儿所一样，安全、便捷，fir.im 将我们这些“父母”从发包内测中解放！期待越办越好，小美会一如既往支持 fir.im！</p>
+        <p class="hide">节操精选的公司内部测试到小范围用户群灰度测试，fir.im 极大方便帮我们解决了安装包传输的问题；安全放心、操作便捷、界面简洁！</p>
+        <p class="hide">fir.im 解决了京东阅读客户端每日测试发布的难题，大大减轻了跨地域开发测试的难度，fir.im 加油！</p>
+        <p class="hide">e 保养一直在用 fir.im 进行测试托管分发，喜欢 fir.im 的 UI 和用户体验设计，硅谷范儿的产品！</p>
+        <p class="hide">fir.im 与下厨房一样，都在 UI 和 UE 上下功夫，将开发者工具做到简洁极致，提高效率的同时也令人赏心悦目。</p>
+    </div>
+</div>
+<!--结束页-->
+<div class="end">
+    <p class="endWord"></p>
+</div>
+<script src="js/lib.js"></script>
+<script src="js/index.js"></script>
+<script src="js/tab.js"></script>
+</body>
+</html>
